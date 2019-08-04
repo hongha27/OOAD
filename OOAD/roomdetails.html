@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>luxury hotel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+
+  <script type="text/javascript" src="jquery_facybox/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="jquery_facybox/jquery.fancybox-1.3.4.pack.js"></script>
+   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+ 
+  <link rel="stylesheet" type="text/css" href="jquery_facybox/jquery.fancybox-1.3.4.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="content.css">
+</head>
+<body>
+ <script type="text/javascript">
+    $(document).ready(function() {
+      $("a#example1").fancybox();
+      $("a#example2").fancybox({
+        'overlayShow' : false,
+        'transitionIn'  : 'elastic',
+        'transitionOut' : 'elastic'
+      });
+
+      $("a#example3").fancybox({
+        'transitionIn'  : 'none',
+        'transitionOut' : 'none'  
+      });
+    });
+  </script> 
+<div class="content">
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1 class="display-3">LUXURY HOTEL</h1>
+ 
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+         <!-- Brand -->
+         <a class="navbar-brand" href="#">logo</a>
+         <!-- Toggler/collapsibe Button -->
+        
+ 
+         <!-- Navbar links -->
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <div class="nav1">
+            <ul class="navbar-nav">
+               <li class="nav-item pad1">
+                  <a class="nav-link " href="index.html">Home</a>
+               </li>
+               <li class="nav-item pad1">
+                  <a class="nav-link " href="content.html">Content</a>
+               </li>
+               <li class="nav-item pad1">
+                  <a class="nav-link " href="roomdetails.html">Room</a>
+               </li>
+                <li class="nav-item pad1">
+                  <a class="nav-link " href="#">About</a>
+               </li>
+            </ul>
+
+         </div>
+          <ul class="navbar-nav ml-auto">
+            <form class="form-inline" action="/somepage">
+               <input class="form-control mr-sm-2" type="text" placeholder="Search">
+               <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+         </ul>
+     </div>
+      </nav>
+  <div class="container" style="margin-top: 30px;">
+        <form class="form-inline" action="index.php">
+          <input class="form-control" type="" name="" placeholder="Nhập địa điểm bạn muốn tới hoặc khách sạn">
+          <div class="form-group changeform">
+          <label >Check-in:</label>
+          <input type="date" name="bday" max="3000-12-31" 
+              min="1000-01-01" class="form-control">
+        </div>
+          <div class="form-group changeform">
+             <label >Check-out:</label>
+             <input type="date" name="bday" min="1000-01-01"
+                    max="3000-12-31" class="form-control">
+          </div>
+          <div class="changeform">
+            <select class="browser-default custom-select">
+              <option selected value="1">1 người</option>
+              <option value="2">2 người</option>
+              <option value="3">Gia đình</option>
+            </select>
+          </div>
+          <div class="changeform">
+           <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+          </div>
+        </form>
+        <br>
+        <br>
+      
+    </div>
+
+  
+</div>
+
+<!-- content -->
+<div class="container">
+  <img src="https://edge.media.datahc.com/HI553950341.jpg" class="img-thumbnail" width="680" height="150" >
+  <div class="ima">
+  <img src="https://en.bastionluxuryhotel.com/cache/3f/ec/3fecd7ef0092f47f8631b778c903f56a.jpg" class="img-thumbnail img5" width="304" height="236">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAyu8_cBYDInBBYw9NsasCC-3o2f5PQ2A9tsnRJ9WVRJSL-tR" class="img-thumbnail img6" width="304" height="236">
+  </div>
+  <table class="table table-bordered">
+  <tr>
+    <th>    
+      <div style="text-align:center;">
+        <a href="" style="font-size: 25px; font-weight: bold;">Happy Hotel</a>
+        <br>
+        <span>280 An Duong Vuong Str. District 5 Ho Chi Minh City 70000  </span>
+        <br>
+        <span class="btn btn-danger">Bestseller</span>
+        <span class="btn btn-primary">Free Wifi</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        <b>price: 500.000VND</b>
+        <br>
+        <img src="https://img.icons8.com/material-rounded/24/000000/add-user-group-man-man.png"><em>Được 82 người giới thiệu</em> 
+        <br>
+        <img src="https://img.icons8.com/wired/24/000000/map.png">
+        <em>Tp.HCM</em>
+        <br>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6511106447656!2d106.68001421411635!3d10.761348962416118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b888ab357%3A0xc469f6e800231314!2zMjgwIEFuIETGsMahbmcgVsawxqFuZywgUGjGsOG7nW5nIDQsIFF14bqtbiA1LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1564927882915!5m2!1svi!2s"></iframe>
+      </div>
+      
+    </th>
+    <th >
+      <h5>Choose room</h5>
+        <p>Standard Double</p>
+      <a id="example1" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710270048485238.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710270048485238.jpg?s=1024x768" /></a>
+       <a id="example2" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710280048485252.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710280048485252.jpg?s=1024x768" /></a>
+        <a id="example3" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710280048485253.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710280048485253.jpg?s=1024x768" /></a>
+        
+    </th>
+  </tr>
+  <tr >
+    <th rowspan="3">
+      <span style="color: red;">Benefit</span> <br>
+      <img src="https://img.icons8.com/cute-clipart/30/000000/double-tick.png"><em>Free wifi</em> <br>
+      <img src="https://img.icons8.com/cute-clipart/30/000000/double-tick.png"><em>Prevertation cancel policy</em>
+      <br>
+      <span style="color: red;">Other utilitiess</span> <br>
+      <img src="https://img.icons8.com/officel/20/000000/hair-dryer.png"> <i style="font-size: 15px;">      hairdryer</i>   
+      <img style=" padding-left: 30px;" src="https://img.icons8.com/ios/20/000000/air-conditioner.png"><i style="font-size: 15px;">    air conditioner</i> <br>
+      <img src="https://img.icons8.com/officel/16/000000/mirror.png"><i style="font-size: 15px;"> mirror</i> 
+      <img style=" padding-left: 30px;" src="https://img.icons8.com/officel/20/000000/table.png"><i style="font-size: 15px;"> table</i> <br>
+      <img style=" padding-left: 30px;"src="https://img.icons8.com/dusk/20/000000/fridge.png"><i style="font-size: 15px;"> fridge</i> 
+      <img style=" padding-left: 30px;"src="https://img.icons8.com/dusk/20/000000/wardrobe.png"><i style="font-size: 15px;"> wardrobe</i> <br> <br> <br>
+      
+    </th>
+    <td >
+      <p class="btn btn-danger">Price : 300.000 VND</p>
+      <br>
+
+      <span>SL</span>
+      <select>
+
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+      </select>
+      <br>
+      <em>+ Acreage : 30m2/247m2</em>
+      <div class="book">
+      <button type="button" class="btn btn-success">Book now</button>
+    </div>
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <h5>Standard Triple</h5>
+      <a id="example1" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710330048485460.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710330048485460.jpg?s=1024x768" /></a>
+       <a id="example2" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710340048485462.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710340048485462.jpg?s=1024x768" /></a>
+        <a id="example3" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710340048485490.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710340048485490.jpg?s=1024x768" /></a>
+    </td>
+  </tr>
+  <tr><td>
+    <p class="btn btn-danger">Price : 500.000 VND</p>
+      <br>
+      <span>SL</span>
+      <select>
+
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+      </select>
+      <br>
+      <em>+ Acreage : 40m2/247m2</em>
+      <div class="book">
+      <button type="button" class="btn btn-success">Book now</button>
+    </div>
+  </td></tr>
+</table>
+    
+
+   <!--  phần 2 -->
+
+
+
+   <table class="table table-bordered">
+  <tr>
+    <th>    
+      <div style="text-align:center;">
+        <a href="" style="font-size: 25px; font-weight: bold;">Angry Hotel</a>
+        <br>
+        <span>280 An Duong Vuong Str. District 5 Ho Chi Minh City 70000  </span>
+        <br>
+        <span class="btn btn-danger">Bestseller</span>
+        <span class="btn btn-primary">Free Wifi</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        <b>price: 700.000VND</b>
+        <br>
+        <img src="https://img.icons8.com/material-rounded/24/000000/add-user-group-man-man.png"><em>Được 150 người giới thiệu</em> 
+        <br>
+        <img src="https://img.icons8.com/wired/24/000000/map.png">
+        <em>Tp.HCM</em>
+        <br>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6511106447656!2d106.68001421411635!3d10.761348962416118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f1b888ab357%3A0xc469f6e800231314!2zMjgwIEFuIETGsMahbmcgVsawxqFuZywgUGjGsOG7nW5nIDQsIFF14bqtbiA1LCBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1564927882915!5m2!1svi!2s"></iframe>
+      </div>
+      
+    </th>
+    <th >
+      <h5>Choose room</h5>
+        <p>Standard Double</p>
+      <a id="example1" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710270048485238.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710270048485238.jpg?s=1024x768" /></a>
+       <a id="example2" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710280048485252.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710280048485252.jpg?s=1024x768" /></a>
+        <a id="example3" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710280048485253.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710280048485253.jpg?s=1024x768" /></a>
+        
+    </th>
+  </tr>
+  <tr >
+    <th rowspan="3">
+      <span style="color: red;">Benefit</span> <br>
+      <img src="https://img.icons8.com/cute-clipart/30/000000/double-tick.png"><em>Free wifi</em> <br>
+      <img src="https://img.icons8.com/cute-clipart/30/000000/double-tick.png"><em>Prevertation cancel policy</em>
+      <br>
+      <span style="color: red;">Other utilitiess</span> <br>
+      <img src="https://img.icons8.com/officel/20/000000/hair-dryer.png"> <i style="font-size: 15px;">      hairdryer</i>   
+      <img style=" padding-left: 30px;" src="https://img.icons8.com/ios/20/000000/air-conditioner.png"><i style="font-size: 15px;">    air conditioner</i> <br>
+      <img src="https://img.icons8.com/officel/16/000000/mirror.png"><i style="font-size: 15px;"> mirror</i> 
+      <img style=" padding-left: 30px;" src="https://img.icons8.com/officel/20/000000/table.png"><i style="font-size: 15px;"> table</i> <br>
+      <img style=" padding-left: 30px;"src="https://img.icons8.com/dusk/20/000000/fridge.png"><i style="font-size: 15px;"> fridge</i> 
+      <img style=" padding-left: 30px;"src="https://img.icons8.com/dusk/20/000000/wardrobe.png"><i style="font-size: 15px;"> wardrobe</i> <br> <br> <br>
+      
+    </th>
+    <td >
+      <p class="btn btn-danger">Price : 300.000 VND</p>
+      <br>
+
+      <span>SL</span>
+      <select>
+
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+      </select>
+      <br>
+      <em>+ Acreage : 30m2/247m2</em>
+      <div class="book">
+      <button type="button" class="btn btn-success">Book now</button>
+    </div>
+    </td>
+
+  </tr>
+  <tr>
+    <td>
+      <h5>Standard Triple</h5>
+      <a id="example1" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710330048485460.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710330048485460.jpg?s=1024x768" /></a>
+       <a id="example2" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710340048485462.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710340048485462.jpg?s=1024x768" /></a>
+        <a id="example3" href="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710340048485490.jpg?s=1024x768"><img class="img-thumbnail" alt="Cinque Terre" width="304" height="236" alt="example1" src="https://pix6.agoda.net/hotelImages/137/1370955/1370955_16110710340048485490.jpg?s=1024x768" /></a>
+    </td>
+  </tr>
+  <tr><td>
+    <p class="btn btn-danger">Price : 500.000 VND</p>
+      <br>
+      <span>SL</span>
+      <select>
+
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option>
+        <option value="">5</option>
+      </select>
+      <br>
+      <em>+ Acreage : 40m2/247m2</em>
+      <div class="book">
+      <button type="button" class="btn btn-success">Book now</button>
+    </div>
+  </td></tr>
+</table>
+    
+  
+</div>
+<!-- paginations -->
+  <nav class="paginations" aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+  </nav>
+<!-- endpaginations -->
+<!-- endcontent -->
+</div>
+<div class="col-sm-12 img1">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-s/11/56/79/7b/sapa-luxury-hotel.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+		<img src="https://mytourcdn.com/upload_images/Image/Location/5_7_2016/25/khach-san-mau-sac-de-thuong-giua-pho-co-hoi-an-mytour-1.jpg" class="img-thumbnail" width="304" height="236">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Q2G9U3PTeE9RsFtS7lWvrmy90ypzQOLFvVjtpDp48YlWAfWA" class="img-thumbnail" width="304" height="236">
+	</div>
+</div>
+<!-- <div class="jumbotron text-center" style="margin-bottom:0"> -->
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <div style="background-color: #c9d1d9;">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <img class="white-text mr-4" src="https://img.icons8.com/color/48/000000/facebook-new.png">
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <img class="white-text mr-4" src="https://img.icons8.com/color/48/000000/twitter.png">
+          </a>
+          <!-- Google +-->
+          <a class="gplus-ic">
+            <img class="white-text mr-4" src="https://img.icons8.com/color/48/000000/google-plus--v2.png">
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <img class="white-text mr-4" src="https://img.icons8.com/color/48/000000/linkedin.png">
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <img class="white-text" src="https://img.icons8.com/color/48/000000/instagram-new.png">
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Company name</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+          consectetur
+          adipisicing elit.</p>
+
+      </div>
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <h6 class="text-uppercase font-weight-bold">Products</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          simply dummy text of the printing
+        </p>
+        <p>
+          simply dummy text of the printing
+        </p>
+        <p>
+         simply dummy text of the printing
+        </p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Your Account</a>
+        </p>
+        <p>
+          <a href="#!">Become an Affiliate</a>
+        </p>
+        <p>
+          <a href="#!">Shipping Rates</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> HCM, NY 10012</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+
+</footer>
+ 
+ 
+</body>
+</html>
