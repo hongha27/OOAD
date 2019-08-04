@@ -1,0 +1,27 @@
+ .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  .carousel-inner img {
+  	margin-left: 22%;
+      width: 60%;
+      height: 100%;
+  }
+  #demo,.content{
+  	background-color: #e9ecef;
+  }
+  .lrcontrols{
+  	margin: auto;
+  }
+  .nav1{
+  	margin-left: 20%;
+  }
+  .pad1{
+  	padding-left: 30px;
+  }
+  .img1{
+  	margin-left: 15%;
+  }
+  .footer{
+  	height: 30%;
+  }
