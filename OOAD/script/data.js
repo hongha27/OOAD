@@ -321,5 +321,11 @@ const sample_img_room = {
 const sample_img_hotel = [
     "https://www.travelplusstyle.com/wp-content/uploads/2019/01/RafflesMYuzu-Nikkei-Cuisine-cropped.jpg",
     "https://amp.businessinsider.com/images/5bef33f00591f24e6f420dc5-750-563.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1sM9277KX77ifA61qMb_RvXAOXSC-9cm-FctOH0DY8pe7mphqA"
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1sM9277KX77ifA61qMb_RvXAOXSC-9cm-FctOH0DY8pe7mphqA",
+    "https://pix10.agoda.net/hotelImages/339/339860/339860_15122210160038672097.jpg",
+    "https://pix10.agoda.net/hotelImages/339/339860/339860_18042019100065001474.jpg",
+    "https://pix10.agoda.net/hotelImages/10971/-1/b909465b8417ea59c45383fe65f4ec30.jpg?s=1024x768",
+    "https://pix10.agoda.net/hotelImages/2163054/-1/4f3b334212d6cf837f60ee731edf916d.jpg?s=1024x768",
+    "https://pix10.agoda.net/hotelImages/109/10964/10964_17122202240060558678.jpg?s=1024x768",
+    "https://i.ytimg.com/vi/gm_W2-MEZps/maxresdefault.jpg"
 ]
