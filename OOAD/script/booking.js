@@ -11,40 +11,20 @@ function shuffleArray(array) {
 const resultPerPage = 4; 
 var loadedHotels = null, currentPage = 1;
 
+var searchLocation = null, checkin = null, checkout = null, roomsize = null;
+
 $(document).ready(function() {
+    getSearchParam();
     loadLocationSelect();
     loadRoomsizeSelect();
+    showSearchParam();
     loadHighRating();
-    loadSearchParam();
     loadedHotels = loadSearchResults();
     showPaginations(Math.ceil(loadedHotels.length/resultPerPage));
     showPage(1);
 })
 
-function loadHighRating() {
-    var content = ``;
-    randarr = shuffleArray([...Array(hotels.length).keys()]);
-    randarr.slice(0,3).forEach(function(i) {
-        content += `
-        <div>
-            <div class="d-flex justify-content-center">
-                <a href="roomdetails.html?${hotels[i].ID}"><img class="img-thumbnail" alt="Cinque Terre" width="200" height="80" src="${sample_img_hotel[i]}"></a>
-            </div>
-            <div style="text-align: center">
-                <a href="roomdetails.html?${hotels[i].ID}"><b>${hotels[i].Name}</b></a>
-            </div>
-            <div style="text-align: center">
-                <img src="https://img.icons8.com/wired/24/000000/map.png">
-                <i>${hotels[i].Location}</i>
-            </div>
-            <br>
-        </div>`
-    })
-    $('#highrating').html(content);
-}
-
-function loadSearchParam() {
-    var searchLocation = null, checkin = null, checkout = null, roomsize = null;
+function getSearchParam() {
     document.location.search.substr(1).split("&").forEach(function (p) {
         var param = p.split("=");
         if (param[0] == "location") {
@@ -59,7 +39,32 @@ function loadSearchParam() {
         else if (param[0] == "checkout") {
             checkout = decodeURIComponent(param[1]);
         }
+    });
+}
+
+function loadHighRating() {
+    var content = ``;
+    randarr = shuffleArray([...Array(hotels.length).keys()]);
+    randarr.slice(0,3).forEach(function(i) {
+        content += `
+        <div>
+            <div class="d-flex justify-content-center">
+                <a href="roomdetails.html?hotel=${hotels[i].ID}"><img class="img-thumbnail" alt="Cinque Terre" width="200" height="80" src="${sample_img_hotel[i]}"></a>
+            </div>
+            <div style="text-align: center">
+                <a href="roomdetails.html?hotel=${hotels[i].ID}"><b>${hotels[i].Name}</b></a>
+            </div>
+            <div style="text-align: center">
+                <img src="https://img.icons8.com/wired/24/000000/map.png">
+                <i>${hotels[i].Location}</i>
+            </div>
+            <br>
+        </div>`
     })
+    $('#highrating').html(content);
+}
+
+function showSearchParam() {
     if (searchLocation) {
         $("#location_select").val(searchLocation).change();
     }
@@ -75,16 +80,6 @@ function loadSearchParam() {
 }
 
 function loadSearchResults() {
-    var searchLocation = null, roomsize = null;
-    document.location.search.substr(1).split("&").forEach(function (p) {
-        var param = p.split("=");
-        if (param[0] == "location") {
-            searchLocation = decodeURIComponent(param[1]).split("+").join(" ");
-        }
-        else if (param[0] == "roomsize") {
-            roomsize = decodeURIComponent(param[1]);
-        }
-    })
     return hotels.filter(
         hotel => 
         (!searchLocation || hotel.Location == searchLocation) && 
@@ -126,9 +121,9 @@ function showPage(page) {
     for(var i = (page-1)*resultPerPage; i < Math.min(page*resultPerPage, loadedHotels.length); ++i) {
         content += `
         <tr><th>					
-            <a href="roomdetails.html?${loadedHotels[i].Id}"><img class="img-thumbnail" alt="Cinque Terre" width="200" height="80" src=${sample_img_hotel[i]}></a>
+            <a href="roomdetails.html?hotel=${loadedHotels[i].ID}&roomsize=${roomsize}"><img class="img-thumbnail" alt="Cinque Terre" width="200" height="80" src=${sample_img_hotel[hotels.findIndex(hotel => hotel.ID==loadedHotels[i].ID)]}></a>
             <div class="info">
-                <a  href="roomdetails.html?${loadedHotels[i].Id}"><b>${loadedHotels[i].Name}</b></a>
+                <a href="roomdetails.html?hotel=${loadedHotels[i].ID}&roomsize=${roomsize}"><b>${loadedHotels[i].Name}</b></a>
                 <br><br>
                 <b>Minimum price: ${Number(Math.min(...loadedHotels[i].RoomList.map(room => room.Price))).toLocaleString('en')} VND</b>
                 <br>

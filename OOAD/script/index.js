@@ -4,19 +4,17 @@ $(document).ready(function() {
 }) 
 
 function loadLocationSelect() {
-    var content = `<option value=""></option>`;
+    var content = `<option selected value="">Any</option>`;
     locations.forEach(function(location) {
         content += `<option value="${location}">${location}</option>`
     })
     $("#location_select").html(content);
-    $("#location_select").val(0).change();
 }
 
 function loadRoomsizeSelect() {
-    var content = ``
+    var content = `<option selected value="">Any</option>`
     roomsizes.forEach(function (roomsize) {
         content += `<option value="${roomsize.Value}">${roomsize.Desc}</option>`
     })
     $("#roomsize_select").html(content);
-    $("#roomsize_select").val(roomsizes[0].Value).change();
 }

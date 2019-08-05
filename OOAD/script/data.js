@@ -1,10 +1,10 @@
 const hotels = [
-    // Ho Chi Minh City
+    // Ho Chi Minh
     {
         ID: "roseland_sweet_sg",
         Name: "Roseland Sweet Hotel & Spa Sai Gon",
-        Location: "Ho Chi Minh City",
-        Address: "4 Cao Ba Quat, Dist. 1, Ho Chi Minh City",
+        Location: "Ho Chi Minh",
+        Address: "4 Cao Ba Quat, Dist. 1, Ho Chi Minh",
         Rating: 5,
         RoomList: [
             {
@@ -36,8 +36,8 @@ const hotels = [
     {
         ID: "caravelle_sg",
         Name: "Caravelle Saigon",
-        Location: "Ho Chi Minh City",
-        Address: "19 Lam Son Square, Dist. 1, Ho Chi Minh City",
+        Location: "Ho Chi Minh",
+        Address: "19 Lam Son Square, Dist. 1, Ho Chi Minh",
         Rating: 5,
         RoomList: [
             {
@@ -69,8 +69,8 @@ const hotels = [
     {
         ID: "reverie_sg",
         Name: "The Reverie Sai Gon",
-        Location: "Ho Chi Minh City",
-        Address: "22-36 Nguyen Hue, Dist. 1, Ho Chi Minh City",
+        Location: "Ho Chi Minh",
+        Address: "22-36 Nguyen Hue, Dist. 1, Ho Chi Minh",
         Rating: 5,
         RoomList: [
             {
@@ -286,7 +286,7 @@ const hotels = [
 ]
 
 const locations = [
-    "Ho Chi Minh City",
+    "Ho Chi Minh",
     "Ha Noi",
     "Da Nang",
 ]
