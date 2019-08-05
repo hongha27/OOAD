@@ -148,12 +148,6 @@ const hotels = [
                 Price: 2000000
             },
             {
-                Name: "Deluxe Triple Room",
-                RoomSize: 3,
-                Acreage: 30,
-                Price: 3000000
-            },
-            {
                 Name: "Suite Room",
                 RoomSize: 2,
                 Acreage: 35,
@@ -185,12 +179,6 @@ const hotels = [
                 RoomSize: 3,
                 Acreage: 28,
                 Price: 7000000
-            },
-            {
-                Name: "Grand Double Twin Room",
-                RoomSize: 4,
-                Acreage: 40,
-                Price: 15000000
             },
             {
                 Name: "Designer Room",
@@ -259,12 +247,6 @@ const hotels = [
                 RoomSize: 2,
                 Acreage: 35,
                 Price: 25000000
-            },
-            {
-                Name: "Suite Twin Room",
-                RoomSize: 4,
-                Acreage: 45,
-                Price: 40000000
             }
         ]
     },
@@ -333,12 +315,11 @@ const sample_img_room = {
     ],
     doubletwin: [
 
-    ],
-    luxury: [
-        
     ]
 }
 
 const sample_img_hotel = [
-
+    "https://www.travelplusstyle.com/wp-content/uploads/2019/01/RafflesMYuzu-Nikkei-Cuisine-cropped.jpg",
+    "https://amp.businessinsider.com/images/5bef33f00591f24e6f420dc5-750-563.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ1sM9277KX77ifA61qMb_RvXAOXSC-9cm-FctOH0DY8pe7mphqA"
 ]
