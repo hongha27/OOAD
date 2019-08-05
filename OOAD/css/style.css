@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream:OOAD/css/style.css
+
  .fakeimg {
     height: 200px;
     background: #aaa;
@@ -44,8 +44,8 @@
 .book{
   float: right;
   padding-left: 30%;
-=======
- .fakeimg {
+}
+ .fakeimg{
     height: 200px;
     background: #aaa;
   }
@@ -84,13 +84,15 @@
     margin-left: 64%;
 }
 .ima{
-      margin-top: -33%;
+      /*margin-top: -34%;*/
+     /* margin-top: -455px;*/
+     /*padding-right: 20%;*/
 }
 
 .book{
   float: right;
 }
-.resize{
+/*.resize{
   padding-left: 10%;
->>>>>>> Stashed changes:OOAD/style.css
-}
+
+}*/

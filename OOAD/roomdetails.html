@@ -4,17 +4,21 @@
   <title>luxury hotel</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+ 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 
-  <script type="text/javascript" src="jquery_facybox/jquery.mousewheel-3.0.4.pack.js"></script>
-  <script type="text/javascript" src="jquery_facybox/jquery.fancybox-1.3.4.pack.js"></script>
+  <script type="text/javascript" src="script/jquery_facybox/jquery.mousewheel-3.0.4.pack.js"></script>
+  <script type="text/javascript" src="script/jquery_facybox/jquery.fancybox-1.3.4.pack.js"></script>
    
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
  
-  <link rel="stylesheet" type="text/css" href="jquery_facybox/jquery.fancybox-1.3.4.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="script/jquery_facybox/jquery.fancybox-1.3.4.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/content.css">
 </head>
@@ -103,15 +107,41 @@
 
   
 </div>
- <div class="resize">
-  <img src="https://edge.media.datahc.com/HI553950341.jpg" class="img-thumbnail" width="680" height="150" >
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+   <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="http://mattandxime.com/wp-content/uploads/2016/08/Hotel_Bastion_Cartagena_Patio1.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_650,q_auto,w_1000/itemimages/31/35/3135068.jpeg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.amoma.com/Hotels/447754/16-1200x900.jpg" alt="New York" width="1100" height="500">
+    </div>
   </div>
-  <div class="ima">
-  <img src="https://en.bastionluxuryhotel.com/cache/3f/ec/3fecd7ef0092f47f8631b778c903f56a.jpg" class="img-thumbnail img5" width="304" height="236">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYAyu8_cBYDInBBYw9NsasCC-3o2f5PQ2A9tsnRJ9WVRJSL-tR" class="img-thumbnail img6" width="304" height="236">
-  </div>
+  
+  <!-- Left and right controls -->
+  <div class="lrcontrols">
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+
 <!-- content -->
-<div class="container">
+<div style="padding-top: 5%; color: #e9ecef">
+<div class="container" >
 
   <table class="table table-bordered">
   <tr>
@@ -266,11 +296,14 @@
 <!-- endpaginations -->
 <!-- endcontent -->
 </div>
-<div class="col-sm-12 img1">
-		<img src="https://media-cdn.tripadvisor.com/media/photo-s/11/56/79/7b/sapa-luxury-hotel.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
-		<img src="https://mytourcdn.com/upload_images/Image/Location/5_7_2016/25/khach-san-mau-sac-de-thuong-giua-pho-co-hoi-an-mytour-1.jpg" class="img-thumbnail" width="304" height="236">
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Q2G9U3PTeE9RsFtS7lWvrmy90ypzQOLFvVjtpDp48YlWAfWA" class="img-thumbnail" width="304" height="236">
+<div class="container">
+<div class="col-sm-12">
+		<img src="https://media-cdn.tripadvisor.com/media/photo-s/11/56/79/7b/sapa-luxury-hotel.jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="200"> 
+		<img src="https://mytourcdn.com/upload_images/Image/Location/5_7_2016/25/khach-san-mau-sac-de-thuong-giua-pho-co-hoi-an-mytour-1.jpg" class="img-thumbnail" width="250" height="200">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9Q2G9U3PTeE9RsFtS7lWvrmy90ypzQOLFvVjtpDp48YlWAfWA" class="img-thumbnail" width="250" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbJ29CjBt9li3B60ypim4hfh6CrOFHdlDkOIvhjhtFAo2FgSnn" class="img-thumbnail" width="250" height="200">
 	</div>
+  </div>
 </div>
 <!-- <div class="jumbotron text-center" style="margin-bottom:0"> -->
 <!-- Footer -->
