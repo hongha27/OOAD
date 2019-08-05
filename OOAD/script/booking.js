@@ -14,9 +14,10 @@ function loadHighRating() {
             <div>
             <a href="roomdetails.html?${hotels[i].ID}"><b>${hotels[i].Name}</b></a>
             </div>
-            <div>
+            <br>
+            <div >
             <img src="https://img.icons8.com/wired/24/000000/map.png">
-            <p>${hotels[i].Location}</p>
+            <i>${hotels[i].Location}</i>
             </div>
         </div>
         `
