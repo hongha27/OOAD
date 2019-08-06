@@ -42,6 +42,7 @@ function showBookingInfo() {
     $("#bookinginfo").html(`
         <h3 style="color: green;">Booking information</h3>
         <p>Hotel name: ${hotels[hotelIndex].Name}
+        <br>Address: ${hotels[hotelIndex].Address}
         <br>Room type: ${room.Name}
         <br>Check-in time: ${checkin} 12:00 AM
         <br>Check-out time: ${checkout} 11:00 AM
