@@ -38,6 +38,12 @@ function getSearchParam() {
             checkout = decodeURIComponent(param[1]);
         }
     });
+    if (!checkin) {
+        checkin = $("#checkin").val();
+    }
+    if (!checkout) {
+        checkout = $("#checkout").val();
+    }
 }
 
 function loadHighRating() {

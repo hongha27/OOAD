@@ -40,6 +40,12 @@ function getSearchParam() {
             checkout = decodeURIComponent(param[1]);
         }
     });
+    if (!checkin) {
+        checkin = $("#checkin").val();
+    }
+    if (!checkout) {
+        checkout = $("#checkout").val();
+    }
 }
 
 function showSearchParam() {
@@ -65,7 +71,9 @@ function showHotelInfo() {
     <span class="btn btn-danger">Bestseller</span>
     <span class="btn btn-primary">Free Wifi</span>
     <br>
+    <br>
     <b>Minimum price: ${Number(Math.min(...hotels[hotelIndex].RoomList.map(room => room.Price))).toLocaleString('en')} VND</b>
+    <br>
     <br>
     <img src="https://img.icons8.com/material-rounded/24/000000/add-user-group-man-man.png"><em>Recommended by ${Math.floor(Math.random()*1000)%(Math.floor(Math.random()*500)+1)+2} people</em>
     <br>
@@ -119,8 +127,8 @@ function showRooms() {
             <p class="btn btn-danger">Price: ${Number(roomlist[i].Price).toLocaleString('en')} VND</p>
             <br>
             <em>+ Acreage: ${roomlist[i].Acreage} m<sup>2</sup></em>
-            <div class="book">
-              <a href="booking_details.html?hotel=${hotels[hotelIndex].ID}&roomindex=${hotels[hotelIndex].RoomList.findIndex(room => room.Name==roomlist[i].Name)}" class="btn btn-success">Book now</a>
+            <div class="book" onclick="bookRoom(${hotels[hotelIndex].RoomList.findIndex(room => room.Name==roomlist[i].Name)})">
+              <a href="#" class="btn btn-success">Book now</a>
             </div>
           </th>
         </tr>
@@ -128,4 +136,13 @@ function showRooms() {
     }
 
     $("#searchresult").html(content);
+}
+
+function bookRoom(roomindex) {
+    if (!checkin || !checkout) {
+        alert("Please fill out check-in date and check-out date!");
+    }
+    else {
+        this.location.href = `booking_details.html?hotel=${hotels[hotelIndex].ID}&roomindex=${roomindex}&checkin=${checkin}&checkout=${checkout}`;
+    }
 }
