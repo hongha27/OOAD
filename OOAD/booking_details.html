@@ -92,7 +92,7 @@
 
             <div id="customer_details" class="col2-set">
                 <div >
-                    <div class="woocommerce-billing-fields">
+                    <div class="woocommerce-billing-fields" id="bookingdetails">
                         <h3>Booking Details</h3>
                        
 
@@ -104,7 +104,7 @@
                         <p style="float: left; width: 50%;" id="billing_last_name_field" class="form-row form-row-last validate-required">
                             <label class="" for="billing_last_name">Last Name <abbr title="required" class="required">*</abbr>
                             </label>
-                            <input style="width: 95%; padding: 5px;" type="text" value="" placeholder="" id="BillingLastName" name="billing_last_name" class="input-text ">
+                            <input style="width: 95%; padding: 5px;" type="text" value="" placeholder="" id="BillingLastName" name="billing_last_name" class="input-text " required>
                         </p>
                         <div class="clear"></div>
 
@@ -117,17 +117,17 @@
                         <p style="float: left; width: 50%;" id="billing_address_1_field" class="form-row form-row-wide address-field validate-required">
                             <label class="" for="billing_address_1">Address <abbr title="required" class="required">*</abbr>
                             </label>
-                            <input style="width: 95%; padding: 5px;" type="text" value="" placeholder="Street address" id="BillingAddress1" name="billing_address_1"  class="input-text ">
+                            <input style="width: 95%; padding: 5px;" type="text" value="" placeholder="Street address" id="BillingAddress1" name="billing_address_1"  class="input-text " required>
                         </p>
 
                         <p style="float: left; width: 50%;" id="billing_state_field" class="form-row form-row-first address-field validate-state" data-o_class="form-row form-row-first address-field validate-state">
                             <label class="" for="billing_state">County <abbr title="required" class="required">*</abbr></label>
-                            <input style="float: left; width: 95%; margin-right: 3%; padding: 5px;" type="text" id="BillingState" name="billing_state" placeholder="State / County" value="" class="input-text ">
+                            <input style="float: left; width: 95%; margin-right: 3%; padding: 5px;" type="text" id="BillingState" name="billing_state" placeholder="State / County" value="" class="input-text " required>
                         </p>
 
                         <p style="float: left; width: 50%;" id="billing_city_field" class="form-row form-row-wide address-field validate-required" data-o_class="form-row form-row-wide address-field validate-required">
                             <label class="" for="billing_city">Town / City <abbr title="required" class="required">*</abbr></label>
-                            <input style="float: left; width: 95%; margin-right: 3%; padding: 5px;" type="text" value="" placeholder="Town / City" id="BillingCity" name="billing_city" class="input-text ">
+                            <input style="float: left; width: 95%; margin-right: 3%; padding: 5px;" type="text" value="" placeholder="Town / City" id="BillingCity" name="billing_city" class="input-text " required>
                         </p>
 
                         <div class="clear"></div>
@@ -135,13 +135,13 @@
                         <p style="float: left; width: 50%;" id="billing_email_field" class="form-row form-row-first validate-required validate-email">
                             <label class="" for="billing_email">Email Address <abbr title="required" class="required">*</abbr>
                             </label>
-                            <input style="float: left; width: 95%; margin-right: 3%; padding: 5px;" type="text" value="" placeholder="" id="BillingEmail" name="billing_email" class="input-text ">
+                            <input style="float: left; width: 95%; margin-right: 3%; padding: 5px;" type="email" value="" placeholder="" id="BillingEmail" name="billing_email" class="input-text " required>
                         </p>
 
                         <p style="float: left; width: 50%;" id="billing_phone_field" class="form-row form-row-last validate-required validate-phone">
                             <label class="" for="billing_phone">Phone <abbr title="required" class="required">*</abbr>
                             </label>
-                            <input style="float: left; width: 95%; margin-right: 3%; padding: 5px;" type="text" value="" placeholder="" id="BillingPhone" name="billing_phone" class="input-text ">
+                            <input style="float: left; width: 95%; margin-right: 3%; padding: 5px;" type="tel" pattern='\d{8,13}' value="" placeholder="" id="BillingPhone" name="billing_phone" class="input-text " required>
                         </p>
                          <div class="clear"></div>
                         </div>
@@ -157,7 +157,7 @@
                 <br>
 
                 <div> 
-                  <input style="margin-left: 9%; margin-top: 4%;" type="submit" data-value="Place order" value="Place order" id="PlaceOrder" name="woocommerce_checkout_place_order" class="btn btn-primary">
+                  <input style="margin-left: 9%; margin-top: 4%;" type="submit" data-value="Place order" value="Confirm booking" id="PlaceOrder" name="woocommerce_checkout_place_order" class="btn btn-primary" id="confirmbooking">
                 </div>
            </form>
       

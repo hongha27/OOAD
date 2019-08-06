@@ -52,7 +52,3 @@ function showBookingInfo() {
         <br>
     `)
 }
-
-function validateBookingDetails() {
-
-}
