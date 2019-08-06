@@ -11,12 +11,10 @@ function shuffleArray(array) {
 const resultPerPage = 4; 
 var loadedHotels = null, currentPage = 1;
 
-var searchLocation = null, checkin = null, checkout = null, roomsize = null;
+var searchLocation = "", checkin = "", checkout = "", roomsize = "";
 
 $(document).ready(function() {
     getSearchParam();
-    loadLocationSelect();
-    loadRoomsizeSelect();
     showSearchParam();
     loadHighRating();
     loadedHotels = loadSearchResults();
@@ -89,7 +87,6 @@ function loadSearchResults() {
 }
 
 function showPaginations(pages) {
-    console.log(pages);
     var content = ``;
     if (pages > 1) {
         content += `
@@ -121,9 +118,9 @@ function showPage(page) {
     for(var i = (page-1)*resultPerPage; i < Math.min(page*resultPerPage, loadedHotels.length); ++i) {
         content += `
         <tr><th>					
-            <a href="roomdetails.html?hotel=${loadedHotels[i].ID}&roomsize=${roomsize}"><img class="img-thumbnail" alt="Cinque Terre" width="200" height="80" src=${sample_img_hotel[hotels.findIndex(hotel => hotel.ID==loadedHotels[i].ID)]}></a>
+            <a href="roomdetails.html?hotel=${loadedHotels[i].ID}&location=${searchLocation}&checkin=${checkin}&checkout=${checkout}&roomsize=${roomsize}"><img class="img-thumbnail" alt="Cinque Terre" width="200" height="80" src=${sample_img_hotel[hotels.findIndex(hotel => hotel.ID==loadedHotels[i].ID)]}></a>
             <div class="info">
-                <a href="roomdetails.html?hotel=${loadedHotels[i].ID}&roomsize=${roomsize}"><b>${loadedHotels[i].Name}</b></a>
+                <a href="roomdetails.html?hotel=${loadedHotels[i].ID}&location=${searchLocation}&checkin=${checkin}&checkout=${checkout}&roomsize=${roomsize}"><b>${loadedHotels[i].Name}</b></a>
                 <br><br>
                 <b>Minimum price: ${Number(Math.min(...loadedHotels[i].RoomList.map(room => room.Price))).toLocaleString('en')} VND</b>
                 <br>

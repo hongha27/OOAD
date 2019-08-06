@@ -308,28 +308,28 @@ const roomsizes = [
 
 const sample_img_room = {
     double: [
-    "https://www.tivolihotel.com/uploads/tx_templavoila/720x469-02-2019-Tivoli-Hotel-Standard_double_wood_harbour_02.jpg",
-    "http://www.marmarayhotel.com/img/room/twin.jpg",
-    "https://www.butler.ie/cmsGallery/imagerow/17849/resized/1900x900/standard_double_room_1.jpeg",
-    "http://wyngate26.com/wp-content/uploads/2014/07/standard-double-2-1060x485.jpg",
-    "http://diana-apt.com/wp-content/uploads/thumbs/Standard-Double-Room-nlhazi47gygffcq72kilg9x67q25qunpz7ajogmfe8.jpg",
-    "https://media-cdn.tripadvisor.com/media/photo-s/05/6f/52/8c/doubletree-by-hilton.jpg"
+        "https://www.tivolihotel.com/uploads/tx_templavoila/720x469-02-2019-Tivoli-Hotel-Standard_double_wood_harbour_02.jpg",
+        "http://www.marmarayhotel.com/img/room/twin.jpg",
+        "https://www.butler.ie/cmsGallery/imagerow/17849/resized/1900x900/standard_double_room_1.jpeg",
+        "http://wyngate26.com/wp-content/uploads/2014/07/standard-double-2-1060x485.jpg",
+        "http://diana-apt.com/wp-content/uploads/thumbs/Standard-Double-Room-nlhazi47gygffcq72kilg9x67q25qunpz7ajogmfe8.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/05/6f/52/8c/doubletree-by-hilton.jpg"
     ],
     triple: [
-     "http://www.hoteldelacouronne.be/media/cache/frontend_fullscreen/media/image/image_2017-08-14-12-14-09_599177f18aae2_standard-triple-room---david-plas.jpg",
-     "https://www.samuraisnow.com/sites/default/files/Shiba%20Park%20Hotel%20Std%20Triple%202.jpg",
-     "https://www.steffani.ch/en/wp-content/uploads/2019/04/Standard-Triple-Room-Family-Room-New-Design-Fall-2018.jpg",
-     "https://www.amitymotel.com.au/media/zoo/images/StandardTripleRoom1_c4346b329c92980e9464a3f9eaa89eec.jpg",
-     "http://muinevolgahotel.com/upload/images/phong-3-nguoi-tieu-chuan.jpg",
-     "http://tropicalsandsguesthouse.com/wp-content/uploads/2016/12/room-type-C-1200x750.jpg"
+        "http://www.hoteldelacouronne.be/media/cache/frontend_fullscreen/media/image/image_2017-08-14-12-14-09_599177f18aae2_standard-triple-room---david-plas.jpg",
+        "https://www.samuraisnow.com/sites/default/files/Shiba%20Park%20Hotel%20Std%20Triple%202.jpg",
+        "https://www.steffani.ch/en/wp-content/uploads/2019/04/Standard-Triple-Room-Family-Room-New-Design-Fall-2018.jpg",
+        "https://www.amitymotel.com.au/media/zoo/images/StandardTripleRoom1_c4346b329c92980e9464a3f9eaa89eec.jpg",
+        "http://muinevolgahotel.com/upload/images/phong-3-nguoi-tieu-chuan.jpg",
+        "http://tropicalsandsguesthouse.com/wp-content/uploads/2016/12/room-type-C-1200x750.jpg"
     ],
     doubletwin: [
-    "https://www.hotelhottingen.ch/en/wp-content/uploads/WonderPlugin%20Slider/Standard%20Quadruple%20Room/room7_2.jpg",
-    "https://media-cdn.tripadvisor.com/media/photo-s/0c/12/a2/e5/standard-quadruple-room.jpg",
-    "https://images.mirai.com/INFOROOMS/100028652/HTdehips7kiKyqUrtLfX/HTdehips7kiKyqUrtLfX_large.jpg",
-    "https://cdn.webhotelier.net/photos/w=1920/philippos-quad/L357089.jpg",
-    "https://thumbnails.trvl-media.com/yeGkFnehC8Yud2_Zp3ScCzSkfVI=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/37000000/36400000/36394000/36393910/a79964e9_z.jpg",
-    "http://www.thestage-kohchang.com/images/StandardQuadrupleRoom-7.jpg"
+        "https://www.hotelhottingen.ch/en/wp-content/uploads/WonderPlugin%20Slider/Standard%20Quadruple%20Room/room7_2.jpg",
+        "https://media-cdn.tripadvisor.com/media/photo-s/0c/12/a2/e5/standard-quadruple-room.jpg",
+        "https://images.mirai.com/INFOROOMS/100028652/HTdehips7kiKyqUrtLfX/HTdehips7kiKyqUrtLfX_large.jpg",
+        "https://cdn.webhotelier.net/photos/w=1920/philippos-quad/L357089.jpg",
+        "https://thumbnails.trvl-media.com/yeGkFnehC8Yud2_Zp3ScCzSkfVI=/773x530/smart/filters:quality(60)/images.trvl-media.com/hotels/37000000/36400000/36394000/36393910/a79964e9_z.jpg",
+        "http://www.thestage-kohchang.com/images/StandardQuadrupleRoom-7.jpg"
     ]
 }
 
